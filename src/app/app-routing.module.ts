@@ -6,6 +6,7 @@ import { RequestComponent } from './modules/loan/request/request.component';
 import { LoginComponent } from './modules/user/login/login.component';
 import { RegisterComponent } from './modules/user/register/register.component';
 import { TransactionSuspiciousComponent } from './modules/transaction-suspicious/transaction-suspicious.component';
+import { CreateAccountComponent } from './modules/bank-account/create-account/create-account.component';
 
 const routes: Routes = [
   {path: 'register', component: RegisterComponent},
@@ -14,6 +15,7 @@ const routes: Routes = [
   {path: '',   component: ListComponent},
   {path: 'loans/:id',   component: ListAvailableComponent},
   {path: 'transaction-suspicious',   component: TransactionSuspiciousComponent},
+  {path: 'bank-account',   component: CreateAccountComponent},
 ];
 
 @NgModule({

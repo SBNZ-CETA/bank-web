@@ -12,6 +12,7 @@ import { RequestComponent } from './modules/loan/request/request.component';
 import { ListComponent } from './modules/loan/list/list.component';
 import { ListAvailableComponent } from './modules/loan/list-available/list-available.component';
 import { TransactionSuspiciousComponent } from './modules/transaction-suspicious/transaction-suspicious.component';
+import { CreateAccountComponent } from './modules/bank-account/create-account/create-account.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { TransactionSuspiciousComponent } from './modules/transaction-suspicious
     ListComponent,
     ListAvailableComponent,
     TransactionSuspiciousComponent,
+    CreateAccountComponent
   ],
   imports: [
     BrowserModule,
