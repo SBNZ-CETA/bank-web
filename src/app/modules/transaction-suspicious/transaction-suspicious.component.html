@@ -1,0 +1,15 @@
+<div  class="center">
+    <div *ngFor="let a of transactions" class="padding">
+        Receiver: {{a.receiverAccount.user.name}} {{a.receiverAccount.user.surname}}
+        <br/>
+        Date and time: {{a.transactionTime | date : 'dd.MM.yyyy HH:MM'}}
+        <br/>
+        Location: {{a.location}}
+        <br/>
+        Amount: {{a.amount}}
+        <br/>
+        <button (click)="notSuspicious(a.id)" class="p-0.5 text-white rounded-lg bg-blue-500 hover:bg-blue-600">Not suspicious</button>
+    </div>
+    
+      
+</div>
