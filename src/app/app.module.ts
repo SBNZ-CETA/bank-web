@@ -8,13 +8,19 @@ import { RegisterComponent } from './modules/user/register/register.component';
 import { LoginComponent } from './modules/user/login/login.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { RequestComponent } from './modules/loan/request/request.component';
+import { ListComponent } from './modules/loan/list/list.component';
+import { ListAvailableComponent } from './modules/loan/list-available/list-available.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     RegisterComponent,
-    LoginComponent
+    LoginComponent,
+    RequestComponent,
+    ListComponent,
+    ListAvailableComponent
   ],
   imports: [
     BrowserModule,
