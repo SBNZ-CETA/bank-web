@@ -5,3 +5,8 @@ export interface LoanDto {
   startingWorkDateIfEmployed: string;
   expirationWorkDateIfLimited: string;
 }
+
+export interface Loan extends LoanDto {
+  user: unknown;
+  id: string;
+}

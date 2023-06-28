@@ -1,6 +1,6 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { LoanDto } from './model';
+import { Loan, LoanDto } from './model';
 
 @Injectable({
   providedIn: 'root'
@@ -17,4 +17,9 @@ export class LoansService {
   public submitLoan(dto: LoanDto) {
     return this.http.post<unknown>(this.apiUrl+'loans', JSON.stringify(dto), this.httpOptions);
   };
+
+  public listAll() {
+    return this.http.get<Loan[]>(`${this.apiUrl}loans/requests`, this.httpOptions)
+  }
 }
+

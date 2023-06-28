@@ -9,6 +9,7 @@ import { LoginComponent } from './modules/user/login/login.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { RequestComponent } from './modules/loan/request/request.component';
+import { ListComponent } from './modules/loan/list/list.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { RequestComponent } from './modules/loan/request/request.component';
     NavbarComponent,
     RegisterComponent,
     LoginComponent,
-    RequestComponent
+    RequestComponent,
+    ListComponent
   ],
   imports: [
     BrowserModule,
