@@ -8,5 +8,12 @@ export interface LoanDto {
 
 export interface Loan extends LoanDto {
   user: unknown;
-  id: string;
+  id: number;
+}
+
+export interface AvailableLoan {
+  id: number;
+  minimumPaymentDeadline: number;
+  maximumPaymentDeadline: number;
+  loanAmount: number;
 }

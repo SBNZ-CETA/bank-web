@@ -10,6 +10,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { RequestComponent } from './modules/loan/request/request.component';
 import { ListComponent } from './modules/loan/list/list.component';
+import { ListAvailableComponent } from './modules/loan/list-available/list-available.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ListComponent } from './modules/loan/list/list.component';
     RegisterComponent,
     LoginComponent,
     RequestComponent,
-    ListComponent
+    ListComponent,
+    ListAvailableComponent
   ],
   imports: [
     BrowserModule,

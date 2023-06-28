@@ -1,6 +1,6 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Loan, LoanDto } from './model';
+import { AvailableLoan, Loan, LoanDto } from './model';
 
 @Injectable({
   providedIn: 'root'
@@ -20,6 +20,10 @@ export class LoansService {
 
   public listAll() {
     return this.http.get<Loan[]>(`${this.apiUrl}loans/requests`, this.httpOptions)
+  }
+
+  public listAvailableLoans(id: number) {
+    return this.http.get<AvailableLoan[]>(`${this.apiUrl}loans/requests/${id}`, this.httpOptions)
   }
 }
 

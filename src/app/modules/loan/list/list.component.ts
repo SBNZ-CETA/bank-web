@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { LoansService } from '../loans.service';
 import { Loan } from '../model';
 
@@ -12,7 +13,8 @@ export class ListComponent {
   public loans: Loan[] = [];
 
   constructor(
-    private service: LoansService
+    private service: LoansService,
+    private router: Router,
   ){}
 
 
@@ -21,4 +23,8 @@ export class ListComponent {
   }
 
 
+  getAvailable(id: number) {
+    console.log(id)
+    this.router.navigate(['loans', id])
+  }
 }
